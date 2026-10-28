@@ -23,17 +23,17 @@ def Encrypteur():
     cle="".join(clecryptage())
     cleint=int(cle[0])+int(cle[1])+int(cle[2])+int(cle[3])+int(cle[4])
     texteswap+=cle+"#"
-    alphabet="abcdefghijklmnopqrstuvwxyz"
-    alphabetswap="ucvjhzxdlbpinsmtyfqwraegok"
-    alphabetswapcle=alphabetswap[cleint:] + alphabetswap[:cleint]
+    caractere="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ,;/!%éàèêîôöïë()[]=+-@&1234567890*$_<>|~'.?"
+    caractereswap="Hride4xSB UyVg._IöTZbvp@Fé5D78nP~,=jJ6RNo!lè'm[K?tX+O*$|qGWaêzQMôEYsîL-ï%/<ë;3C2(9wA>1)]&àcukh0f"
+    caractereswapcle=caractereswap[cleint:] + caractereswap[:cleint]
     texte = str(input("Saisir votre texte : "))
     for i in range(len(texte)):
-        for y in range(26):
-            if texte[i]==alphabet[y]:
-                texteswap+=alphabetswapcle[y]
+        for y in range(96):
+            if texte[i]==caractere[y]:
+                texteswap+=caractereswapcle[y]
                 break
             else:
-                if y==25:
+                if y==95:
                     texteswap+=texte[i]
     
     VerEncrypt=texteswap

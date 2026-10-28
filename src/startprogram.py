@@ -50,3 +50,8 @@ def StartProgram() :
             else :
                 clear.ClearCmd()
                 continue
+        else :
+            print("\nVous avez mal saisi, veuillez vérifier votre saisi.")
+            time.sleep(1)
+            clear.ClearCmd()
+            continue
