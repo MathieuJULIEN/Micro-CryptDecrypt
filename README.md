@@ -1,0 +1,1 @@
+This is a small encryption program for simple text files. Currently, you have to type your text directly into the terminal when launching the program. However, in the future, it should read from a .txt file and write the encrypted (or decrypted) message into a file named Result.txt inside a .txt folder.
