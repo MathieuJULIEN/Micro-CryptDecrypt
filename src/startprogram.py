@@ -41,7 +41,7 @@ def StartProgram() :
             break
         elif ChoixOption == "2":
             clear.ClearCmd()
-            print("en cours de dev")
+            print(decryptage.Decrypteur())
             break
         elif ChoixOption == "0":
             clear.ClearCmd()
