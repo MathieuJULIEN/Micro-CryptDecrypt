@@ -28,5 +28,3 @@ def Encrypteur():
     
     VerEncrypt=texteswap
     return VerEncrypt
-
-print(Encrypteur())
