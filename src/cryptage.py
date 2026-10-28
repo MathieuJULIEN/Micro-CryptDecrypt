@@ -3,7 +3,7 @@ from random import *
 def clecryptage():
     """
     Cette fonction s'occupe de créer une clé de cryptage,
-    dans les valeurs d'une liste correspondant a un début et a la fin des 10 000 première décimales de Pi
+    dans les valeurs d'une liste correspondant a un début et a la fin des 10 000 premières décimales de Pi
     On récupère 5 nombres qui ce suivent et forme notre clé.
     """
     cle=[]
