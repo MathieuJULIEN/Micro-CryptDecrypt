@@ -55,3 +55,9 @@ def StartProgram() :
             time.sleep(1)
             clear.ClearCmd()
             continue
+
+
+
+def ReturnMenu() :
+    print("Souhaitez vous retourner au menu ou quitter ?\n\n 1 - Retour au menu \n 2 - Quitter l'application")
+    saisi=input("Option sélectionné : ")
