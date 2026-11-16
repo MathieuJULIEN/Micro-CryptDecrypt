@@ -1,11 +1,18 @@
+from src import error
+
 def Decrypteur():
     messagecrypte=input("Saisir votre message Crypté : ")
+    if len(messagecrypte)<7:
+        return error.err_message_trop_court()
     sommepourcle=0
     texteuncrypt=""
     caractere="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ,;/!%éàèêîôöïë()[]=+-@&1234567890*$_<>|~'.?"
     caractereswap="Hride4xSB UyVg._IöTZbvp@Fé5D78nP~,=jJ6RNo!lè'm[K?tX+O*$|qGWaêzQMôEYsîL-ï%/<ë;3C2(9wA>1)]&àcukh0f"
-    for i in range(0,5):
-        sommepourcle+=int(messagecrypte[i])
+    try:
+        for i in range(0,5):
+            sommepourcle+=int(messagecrypte[i])
+    except ValueError:
+        return error.err_cle_invalide()
     rouedecesar=caractereswap[sommepourcle:]+caractereswap[:sommepourcle]
     for y in range(6,len(messagecrypte)):
         for z in range(96):
@@ -15,4 +22,4 @@ def Decrypteur():
             else:
                 if z==95:
                     texteuncrypt+=messagecrypte[y]
-    return texteuncrypt
+    return "\n"+texteuncrypt

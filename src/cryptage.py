@@ -37,4 +37,4 @@ def Encrypteur():
                     texteswap+=texte[i]
     
     VerEncrypt=texteswap
-    return VerEncrypt
+    return "\n"+VerEncrypt

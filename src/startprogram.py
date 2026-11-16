@@ -1,6 +1,7 @@
 import src.cryptage as cryptage
 import src.decryptage as decryptage
 import src.clear as clear
+import src.error as error
 import time
 import sys
 
@@ -19,8 +20,8 @@ def ConfirmExit() :
             clear.ClearCmd()
             return False
         else :
-            print("\nVous avez mal saisi, veuillez vérifier votre saisi.")
-            time.sleep(1)
+            print(error.err_choix_menu())
+            time.sleep(3)
             clear.ClearCmd()
             continue
         
@@ -33,7 +34,7 @@ def StartProgram() :
     """
     clear.ClearCmd()
     while True:
-        print("\n Saisir le numéro correspondant à l'option que vous voulez utiliser : \n\n 1 - Cryptage \n 2 - Decryptage \n 0 - Quitter\n")
+        print(" Saisir le numéro correspondant à l'option que vous voulez utiliser : \n\n 1 - Cryptage \n 2 - Decryptage \n 0 - Quitter\n")
         ChoixOption=input("Option choisi : ")
         print("\n")
         if ChoixOption == "1" :
@@ -52,8 +53,8 @@ def StartProgram() :
                 clear.ClearCmd()
                 continue
         else :
-            print("\nVous avez mal saisi, veuillez vérifier votre saisi.")
-            time.sleep(2)
+            print(error.err_choix_menu())
+            time.sleep(3)
             clear.ClearCmd()
             continue
 
@@ -62,7 +63,7 @@ def StartProgram() :
 def ReturnMenu() :
     while True :
         print("\n\nSouhaitez vous retourner au menu ou quitter ?\n\n 1 - Retour au menu \n 2 - Quitter l'application")
-        saisi=input("Option sélectionné : ")
+        saisi=input("\nOption sélectionné : ")
         if saisi == "1" :
             clear.ClearCmd()
             break
@@ -71,7 +72,7 @@ def ReturnMenu() :
             if ConfirmExit() == True:
                 sys.exit()
         else :
-            print("\nVous avez mal saisi, veuillez vérifier votre saisi.")
-            time.sleep(2)
+            print(error.err_choix_menu())
+            time.sleep(3)
             clear.ClearCmd()
             continue
