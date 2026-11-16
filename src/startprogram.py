@@ -2,6 +2,7 @@ import src.cryptage as cryptage
 import src.decryptage as decryptage
 import src.clear as clear
 import time
+import sys
 
 
 def ConfirmExit() :
@@ -38,11 +39,11 @@ def StartProgram() :
         if ChoixOption == "1" :
             clear.ClearCmd()
             print(cryptage.Encrypteur())
-            break
+            ReturnMenu()
         elif ChoixOption == "2":
             clear.ClearCmd()
             print(decryptage.Decrypteur())
-            break
+            ReturnMenu()
         elif ChoixOption == "0":
             clear.ClearCmd()
             if ConfirmExit() == True:
@@ -52,12 +53,25 @@ def StartProgram() :
                 continue
         else :
             print("\nVous avez mal saisi, veuillez vérifier votre saisi.")
-            time.sleep(1)
+            time.sleep(2)
             clear.ClearCmd()
             continue
 
 
 
 def ReturnMenu() :
-    print("Souhaitez vous retourner au menu ou quitter ?\n\n 1 - Retour au menu \n 2 - Quitter l'application")
-    saisi=input("Option sélectionné : ")
+    while True :
+        print("\n\nSouhaitez vous retourner au menu ou quitter ?\n\n 1 - Retour au menu \n 2 - Quitter l'application")
+        saisi=input("Option sélectionné : ")
+        if saisi == "1" :
+            clear.ClearCmd()
+            break
+        elif saisi == "2" :
+            clear.ClearCmd()
+            if ConfirmExit() == True:
+                sys.exit()
+        else :
+            print("\nVous avez mal saisi, veuillez vérifier votre saisi.")
+            time.sleep(2)
+            clear.ClearCmd()
+            continue
