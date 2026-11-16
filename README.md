@@ -43,9 +43,10 @@ Si vous souhaitez exécuter le code Python directement ou explorer les fichiers 
 
 ## 🗺️ Évolutions prévues (Roadmap)
 
-* [x] Création de l'exécutable Windows (`.exe`) avec icône personnalisée (`Micro-CryptDecrypt.ico`).
-* [ ] Lecture automatique d'un message depuis un fichier `.txt`.
-* [ ] Exportation automatique du résultat chiffré ou déchiffré dans un fichier `Result.txt` (dans un dossier dédié).
+* [x] Création de l'exécutable Windows (`.exe`) avec icône personnalisée (`Micro-CryptDecrypt.ico`) **(v1.0)**.
+* [ ] Vérification d'une potentielle mise à jour pour l'exécutable **(v1.1)**.
+* [ ] Lecture automatique d'un message depuis un fichier `.txt` **(v2.0)**.
+* [ ] Exportation automatique du résultat chiffré ou déchiffré dans un fichier `Result.txt` (dans un dossier dédié) **(v2.0)**.
 * [ ] Version web accessible directement sur téléphone.
 
 ---
