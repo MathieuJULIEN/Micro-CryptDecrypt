@@ -6,7 +6,7 @@ def UpdateCheker() :
     Elle emploie l'API de Github pour comparé la version que vous possèdez actuellement avec la version de la dernière Release.
     """
     #Version ACTU
-    VErsionNow = "v1.0"
+    VErsionNow = "v1.1"
 
     r = requests.get('https://api.github.com/repos/MathieuJULIEN/Micro-CryptDecrypt/releases/latest')
     data = r.json()
