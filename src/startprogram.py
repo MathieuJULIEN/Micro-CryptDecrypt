@@ -2,6 +2,7 @@ import src.cryptage as cryptage
 import src.decryptage as decryptage
 import src.clear as clear
 import src.error as error
+import src.updatechecker as update
 import time
 import sys
 
@@ -32,6 +33,10 @@ def StartProgram() :
     Cette fonction est comme un Menu de lancement, on y choisi si l'on souhaite crypter un message,
     decrypter un message qui a était crypté par ce programme, ou meme pouvoir juste quitter.
     """
+    clear.ClearCmd()
+    if update.UpdateCheker() == True:
+            print("Une nouvelle version est disponible, vous pouvez allez la télécharger ici : https://github.com/MathieuJULIEN/Micro-CryptDecrypt/releases/latest")
+            input("\n Appuyez sur Entrez pour Lancer le Programme.")
     clear.ClearCmd()
     while True:
         print(" Saisir le numéro correspondant à l'option que vous voulez utiliser : \n\n 1 - Cryptage \n 2 - Decryptage \n 0 - Quitter\n")
