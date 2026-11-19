@@ -6,9 +6,8 @@
 
 ## ✨ Fonctionnalités
 
-* 🔒 **Chiffrement de texte :** Saisissez la phrase que vous souhaitez protéger et obtenez instantanément un message chiffré accompagné de sa clé de cryptage.
-* 🔓 **Déchiffrement rapide :** Retrouvez le message original en fournissant le texte chiffré et la clé correspondante.
-* 💻 **Interface console épurée :** Navigation simple et interactive directement dans le terminal (`main.py`).
+* 🔒 **Chiffrement de texte :** Saisissez votre phrase et obtenez en une version crypté accompagné de sa clé de cryptage.
+* 🔓 **Déchiffrement rapide :** Obtenez le message original en insérant le message crypté.
 
 ---
 
@@ -20,7 +19,7 @@ Aucune installation de Python n'est requise pour utiliser le logiciel sur Window
 2. Téléchargez le fichier `Micro-CryptDecrypt.exe` de la dernière version disponible.
 3. Double-cliquez sur le fichier pour lancer le programme.
 
-> **⚠️ Note concernant Windows SmartScreen :** Comme le logiciel n'est pas signé numériquement par un certificat payant, Windows peut afficher un écran bleu *"Windows a protégé votre ordinateur"*. Cliquez simplement sur **Informations complémentaires** puis sur **Exécuter quand même**.
+> **⚠️ Note concernant Windows SmartScreen :** Comme le logiciel n'a pas la signature numérique par un certificat payant, Windows peut afficher un écran bleu *"Windows a protégé votre ordinateur"*. Cliquez simplement sur **Informations complémentaires** et **Exécuter quand même**.
 
 ---
 
@@ -31,7 +30,6 @@ Si vous souhaitez exécuter le code Python directement ou explorer les fichiers 
 1. **Cloner le dépôt :**
    ```bash
    git clone https://github.com/MathieuJULIEN/Micro-CryptDecrypt
-   cd Micro-CryptDecrypt
    ```
 
 2. **Lancer le programme :**
@@ -45,8 +43,8 @@ Si vous souhaitez exécuter le code Python directement ou explorer les fichiers 
 
 * [x] Création de l'exécutable Windows (`.exe`) avec icône personnalisée (`Micro-CryptDecrypt.ico`) **(v1.0)**.
 * [x] Vérification d'une potentielle mise à jour pour l'exécutable **(v1.1)**.
-* [ ] Lecture automatique d'un message depuis un fichier `.txt` **(v2.0)**.
-* [ ] Exportation automatique du résultat chiffré ou déchiffré dans un fichier `Result.txt` (dans un dossier dédié) **(v2.0)**.
+* [ ] Lecture d'un message depuis un fichier `.txt` **(v2.0)**.
+* [ ] Envoie du résultat chiffré ou déchiffré dans un fichier `Result.txt` **(v2.0)**.
 * [ ] Version web accessible directement sur téléphone.
 
 ---
