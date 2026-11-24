@@ -45,7 +45,8 @@ Si vous souhaitez exécuter le code Python directement ou explorer les fichiers 
 * [x] Vérification d'une potentielle mise à jour pour l'exécutable **(v1.1)**.
 * [ ] Lecture d'un message depuis un fichier `.txt` **(v2.0)**.
 * [ ] Envoie du résultat chiffré ou déchiffré dans un fichier `Result.txt` **(v2.0)**.
-* [ ] Version web accessible directement sur téléphone.
+* [ ] Création d'une Interface graphique pour ne plus exécuter dans le terminal. **(V2.1)**
+* [ ] Version web accessible directement sur téléphone. **(v2.1)**
 
 ---
 
